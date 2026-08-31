@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Before launch, replace the example below with your real sitemap URL.
+# Sitemap: https://www.yourdomain.com/sitemap.xml

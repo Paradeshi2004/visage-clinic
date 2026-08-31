@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace YOUR-DOMAIN.com with your real production domain before launch. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-DOMAIN.com/appointments.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/care.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/clinic.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/doctor-profile.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/index.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-acne-marks.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-acne.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-body-brightening.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-dandruff.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-facials.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-hair-growth.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-hair-loss.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-hair-transplant.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-laser.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-medi-facials.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-mole.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-peels.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-pigmentation.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-spot.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-tags-warts.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatment-tattoo.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/treatments.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.com/visit.html</loc></url>
+</urlset>

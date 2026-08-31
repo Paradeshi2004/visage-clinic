@@ -1,0 +1,15 @@
+VISAGE WEBSITE — FULL UPDATED VERSION
+
+This package contains the complete multi-page website.
+
+Latest update applied:
+- visit.html replaced with the final updated Visit page.
+- Map section moved after the Visakhapatnam location section.
+- Get Directions button placed directly below the map.
+- "Find us easily. We're close by." follows the map section.
+- "Your journey starts here." is kept as the next section.
+- Call, WhatsApp, Maps and Appointments areas are more compact.
+- Desktop/laptop spacing and alignment improved.
+- Mobile responsive rules included in visit.html.
+
+Open index.html to start the website.

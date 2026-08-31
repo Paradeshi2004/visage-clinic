@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b5148">
+<meta name="robots" content="index,follow">
+<meta property="og:locale" content="en_IN">
+
+  <title>Visit Visage — The Aesthetic Clinic in Visakhapatnam</title>
+
+  <meta
+    name="description"
+    content="Plan your visit to Visage — The Aesthetic Clinic in Visakhapatnam. Find our location, contact details and directions."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Visit Visage — The Aesthetic Clinic in Visakhapatnam">
+
+  <meta
+    property="og:description"
+    content="Plan your visit to Visage — The Aesthetic Clinic in Visakhapatnam. Find our location, contact details and directions."
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Visage — The Aesthetic Clinic">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    /* Visit page order and spacing update */
+    .visit-location-map,
+    .visit-find-easy{
+      width:100%;
+      max-width:none;
+      box-sizing:border-box;
+      padding:clamp(56px,6vw,96px) clamp(48px,7.5vw,128px);
+    }
+
+    .visit-location-map{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(280px,420px);
+      align-items:center;
+      gap:clamp(56px,10vw,180px);
+      padding-top:clamp(36px,4vw,64px);
+      padding-bottom:clamp(64px,7vw,110px);
+    }
+
+    .visit-location-map-copy h2,
+    .visit-find-easy-heading h2{
+      font-size:clamp(52px,5vw,76px);
+      line-height:.96;
+      margin:18px 0 22px;
+    }
+
+    .visit-location-map-copy > p:last-child{
+      max-width:420px;
+      line-height:1.8;
+    }
+
+    .visit-location-map-device{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .visit-location-map .iphone-map{
+      width:min(100%,300px) !important;
+    }
+
+    .visit-location-map .visit-map-action{
+      margin-top:24px !important;
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .visit-location-map .get-directions-btn{
+      min-width:240px;
+      justify-content:center;
+    }
+
+    .visit-find-easy{
+      padding-top:clamp(64px,7vw,108px);
+      padding-bottom:clamp(64px,7vw,108px);
+      border-top:1px solid var(--line);
+    }
+
+    .visit-find-easy-heading{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(280px,420px);
+      align-items:end;
+      gap:clamp(44px,8vw,120px);
+      margin-bottom:clamp(42px,5vw,72px);
+    }
+
+    .visit-find-easy-heading > p{
+      margin:0;
+      max-width:410px;
+      line-height:1.75;
+    }
+
+    .visit-journey-card{
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      padding:clamp(36px,4vw,56px) 0;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(300px,.8fr);
+      align-items:end;
+      gap:clamp(40px,8vw,120px);
+    }
+
+    .visit-journey-card h3{
+      font-size:clamp(48px,4.6vw,72px);
+      line-height:.96;
+      margin:16px 0 0;
+    }
+
+    .visit-journey-card > p{
+      margin:0;
+      line-height:1.9;
+      max-width:480px;
+    }
+
+    /* Keep Call / WhatsApp / Maps / Appointments compact */
+    .visit-contact-stack article{
+      padding:16px 0 !important;
+    }
+
+    .visit-contact-stack article > a{
+      font-size:clamp(22px,2.1vw,30px) !important;
+      margin:5px 0 !important;
+      line-height:1.1 !important;
+    }
+
+    .visit-contact-stack article > p{
+      font-size:12px !important;
+      line-height:1.5 !important;
+      margin-top:6px !important;
+    }
+
+    @media (min-width:1400px){
+      .visit-location-map,
+      .visit-find-easy{
+        padding-left:clamp(72px,8vw,160px);
+        padding-right:clamp(72px,8vw,160px);
+      }
+    }
+
+    @media (max-width:980px){
+      .visit-location-map,
+      .visit-find-easy{
+        width:min(760px,calc(100% - 48px));
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:0;
+        padding-right:0;
+      }
+
+      .visit-location-map,
+      .visit-find-easy-heading,
+      .visit-journey-card{
+        grid-template-columns:1fr;
+      }
+
+      .visit-location-map{
+        gap:42px;
+      }
+
+      .visit-find-easy-heading{
+        gap:24px;
+      }
+
+      .visit-journey-card{
+        align-items:start;
+        gap:28px;
+      }
+    }
+
+    @media (max-width:640px){
+      .visit-location-map,
+      .visit-find-easy{
+        width:calc(100% - 40px);
+      }
+
+      .visit-location-map{
+        padding-top:28px;
+        padding-bottom:54px;
+        gap:34px;
+      }
+
+      .visit-location-map-copy h2,
+      .visit-find-easy-heading h2,
+      .visit-journey-card h3{
+        font-size:clamp(42px,11.8vw,56px);
+      }
+
+      .visit-location-map .iphone-map{
+        width:min(100%,260px) !important;
+      }
+
+      .visit-location-map .get-directions-btn{
+        width:min(100%,240px);
+      }
+
+      .visit-find-easy{
+        padding-top:56px;
+        padding-bottom:56px;
+      }
+
+      .visit-find-easy-heading{
+        margin-bottom:34px;
+      }
+
+      .visit-journey-card{
+        padding:32px 0;
+      }
+
+      .visit-journey-card > p,
+      .visit-location-map-copy > p:last-child{
+        font-size:14px;
+      }
+
+      .visit-contact-stack article{
+        padding:14px 0 !important;
+      }
+
+      .visit-contact-stack article > a{
+        font-size:25px !important;
+      }
+    }
+
+    @media (max-width:380px){
+      .visit-location-map,
+      .visit-find-easy{
+        width:calc(100% - 32px);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="Visage — The Aesthetic Clinic"
+    >
+      <img decoding="async"
+        src="assets/visage-logo-master.png"
+        alt="Visage — The Aesthetic Clinic"
+        loading="lazy"
+      >
+    </a>
+
+    <nav
+      class="desktop-nav"
+      aria-label="Primary navigation"
+    >
+      <a href="index.html">Home</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="doctor-profile.html">Doctor</a>
+      <a href="care.html">Care</a>
+      <a href="clinic.html">Clinic</a>
+      <a href="visit.html" aria-current="page">Visit</a>
+    </nav>
+
+    <a
+      class="nav-cta"
+      href="appointments.html"
+    >
+      Book consultation
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <i></i>
+      <i></i>
+      <i></i>
+    </button>
+
+  </header>
+
+
+  <!-- MOBILE NAV -->
+
+  <div
+    class="mobile-nav"
+    aria-hidden="true"
+  >
+
+    <a href="index.html">Home</a>
+    <a href="treatments.html">Treatments</a>
+    <a href="doctor-profile.html">Doctor</a>
+    <a href="care.html">Care</a>
+    <a href="clinic.html">Clinic</a>
+    <a href="visit.html">Visit</a>
+
+    <a
+      class="nav-cta"
+      href="appointments.html"
+    >
+      Book consultation
+    </a>
+
+  </div>
+
+
+  <main class="visit-premium">
+
+    <!-- 1 + 2 — HERO -->
+    <section class="visit-premium-hero">
+      <div class="visit-hero-copy">
+        <div>
+          <p class="page-eyebrow">PLAN YOUR VISIT</p>
+          <h1>When you’re ready,<br><em>begin here.</em></h1>
+        </div>
+        <p>Everything you need to find us, get in touch and plan a calm, considered visit to Visage.</p>
+        <div class="visit-hero-actions">
+          <a class="primary-btn" href="appointments.html">Book a consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 — MAP: immediately after Find us in Visakhapatnam -->
+    <section class="visit-location-map section">
+
+      <aside class="visit-quick-card">
+        <span class="visit-number">01 VISAGE LOCATION</span>
+        <div>
+          <h2>Find us in<br><em>Visakhapatnam.</em></h2>
+          <p>Gurudwar Junction · Akkayyapalem<br>Visakhapatnam, Andhra Pradesh</p>
+        </div>
+      </aside>
+
+      <div class="visit-location-map-device">
+        <div class="iphone-map-wrapper" aria-label="Visage location map preview">
+          <div class="iphone-map">
+            <div class="iphone-speaker" aria-hidden="true"></div>
+            <div class="iphone-map-screen">
+              <iframe
+                title="Visage clinic location map preview"
+                src="https://www.google.com/maps?q=17.736456,83.3073664&z=16&output=embed"
+                loading="lazy"
+                tabindex="-1"
+                aria-label="Non-interactive map preview. Use Get directions to open Google Maps."
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Get directions stays directly under the map -->
+        <div class="visit-map-action">
+          <a
+            class="primary-btn get-directions-btn"
+            href="https://www.google.com/maps/dir/?api=1&destination=17.736456,83.3073664"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open directions to Visage in Google Maps"
+          >Get directions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 — FIND US EASILY: after the map -->
+    <section class="visit-find-easy section">
+      <div class="visit-find-easy-heading">
+        <div>
+          <p class="section-kicker">GETTING HERE</p>
+          <h2>Find us easily.<br><em>We’re close by.</em></h2>
+        </div>
+        <p>Use the location above for a quick view of the clinic and open Google Maps for the latest route information.</p>
+      </div>
+
+      <!-- Straight into the Your journey starts here section -->
+      <div class="visit-journey-card">
+        <div>
+          <span class="map-label">YOUR VISIT</span>
+          <h3>Your journey<br><em>starts here.</em></h3>
+        </div>
+        <p>Sudha Arcade · 50-94-30, Akkayyapalem 80 Feet Rd<br>Opposite Vijaya Medical Centre, near GVK Plaza<br>Visakhapatnam, Andhra Pradesh 530016</p>
+      </div>
+    </section>
+
+    <!-- 5 — A FEW SIMPLE NEXT STEPS -->
+    <section class="visit-expect section">
+      <div class="visit-expect-intro">
+        <p class="section-kicker">BEFORE YOU VISIT</p>
+        <h2>A few simple<br><em>next steps.</em></h2>
+      </div>
+
+      <div class="visit-steps">
+        <article>
+          <span>01</span>
+          <h3>Choose a time</h3>
+          <p>Book a consultation or contact the clinic team directly.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Share your concern</h3>
+          <p>Let us know what you would like to discuss so your visit can begin with context.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Arrive comfortably</h3>
+          <p>Use the directions above and contact the team if you need help finding the clinic.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6 — FINAL CONVERSATION CTA -->
+    <section class="visit-final-cta">
+      <p>READY WHEN YOU ARE</p>
+      <h2>Your next step can<br><em>start with a conversation.</em></h2>
+      <a class="primary-btn" href="appointments.html">Book a consultation</a>
+    </section>
+
+    <!-- 7 + 8 — LOCATION + COMPACT CONTACT DETAILS -->
+    <section class="visit-details section">
+      <div class="visit-address-block">
+        <p class="section-kicker">OUR LOCATION</p>
+        <h2>A convenient place<br><em>to begin.</em></h2>
+        <p class="visit-address">
+          Sudha Arcade<br>
+          50-94-30, Akkayyapalem 80 Feet Rd<br>
+          Opposite Vijaya Medical Centre, near GVK Plaza<br>
+          Santhipuram, Dwaraka Nagar<br>
+          Visakhapatnam, Andhra Pradesh 530016
+        </p>
+      </div>
+
+      <div class="visit-contact-stack">
+        <article>
+          <small>CALL</small>
+          <a href="tel:+918142421239">081424 21239</a>
+          <p>Speak with the clinic team to plan your visit.</p>
+        </article>
+        <article>
+          <small>WHATSAPP</small>
+          <a href="https://wa.me/918142421239" target="_blank" rel="noopener noreferrer">Message the clinic</a>
+          <p>Send a quick enquiry and start the conversation.</p>
+        </article>
+        <article>
+          <small>MAPS</small>
+          <a href="https://maps.app.goo.gl/1juLnpg883F3geJr5" target="_blank" rel="noopener noreferrer">Open clinic location</a>
+          <p>Find the clinic and get the latest directions on Google Maps.</p>
+        </article>
+        <article>
+          <small>APPOINTMENTS</small>
+          <a href="appointments.html">Book a consultation</a>
+          <p>Tell us about your concern and preferred visit.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+
+
+    <div class="footer-brand">
+
+      <div class="footer-lockup">
+
+        <img decoding="async"
+          src="assets/visage-logo-master.png"
+          alt="Visage — The Aesthetic Clinic"
+          loading="lazy"
+        >
+
+      </div>
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="treatments.html">Treatments</a>
+
+      <a href="doctor-profile.html">Doctor</a>
+
+      <a href="care.html">Care</a>
+
+      <a href="clinic.html">Clinic</a>
+
+      <a href="visit.html">Visit</a>
+
+    </div>
+
+
+
+    <div class="footer-contact">
+
+      <a href="tel:+918142421239">
+        081424 21239
+      </a>
+
+      <a
+        href="https://wa.me/918142421239"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+
+      <a
+        href="https://maps.app.goo.gl/1juLnpg883F3geJr5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Maps
+      </a>
+
+    </div>
+
+
+    <p>
+      © 2026 Visage — The Aesthetic Clinic
+    </p>
+
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       FLOATING ACTIONS
+  ====================================================== -->
+
+  <div class="floating-actions">
+
+
+    <!-- PHONE -->
+
+    <a
+      href="tel:+918142421239"
+      aria-label="Call Visage"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.53.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.2 2.42.57 3.53a1 1 0 0 1-.25 1.01l-2.2 2.25z"
+        />
+
+      </svg>
+
+    </a>
+
+
+
+    <!-- WHATSAPP -->
+
+    <a
+      href="https://wa.me/918142421239"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp Visage"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M20.52 3.48A11.91 11.91 0 0 0 12.07 0C5.49 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.28-1.65a11.92 11.92 0 0 0 5.79 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.18-1.24-6.17-3.49-8.42zM12.08 21.82a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.73.98 1-3.63-.23-.37a9.88 9.88 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 7c0 5.46-4.44 9.89-9.9 9.89zm5.43-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-1.78-.89-2.95-1.59-4.13-3.61-.31-.53.31-.49.89-1.63.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"
+        />
+
+      </svg>
+
+    </a>
+
+
+
+    <!-- MAPS -->
+
+    <a
+      class="maps"
+      href="https://maps.app.goo.gl/1juLnpg883F3geJr5"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open Visage location in Google Maps"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M12 2C8.69 2 6 4.69 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.31-2.69-6-6-6zm0 8.5A2.5 2.5 0 1 1 12 5a2.5 2.5 0 0 1 0 5.5z"
+        />
+
+      </svg>
+
+    </a>
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

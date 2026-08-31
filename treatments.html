@@ -1,0 +1,225 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b5148">
+<meta name="robots" content="index,follow">
+<meta property="og:locale" content="en_IN"><title>Skin & Aesthetic Treatments in Visakhapatnam | Visage</title><meta name="description" content="Explore personalised skin, hair and aesthetic treatments at Visage — The Aesthetic Clinic in Visakhapatnam."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"><link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Skin & Aesthetic Treatments in Visakhapatnam | Visage">
+<meta property="og:description" content="Explore personalised skin, hair and aesthetic treatments at Visage — The Aesthetic Clinic in Visakhapatnam.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Visage — The Aesthetic Clinic">
+<meta name="twitter:card" content="summary_large_image">
+</head><body>
+<header class="site-header">
+
+  <a class="brand" href="index.html">
+    <img decoding="async"
+      src="assets/visage-logo-master.png"
+      alt="Visage — The Aesthetic Clinic"
+      loading="lazy"
+    >
+  </a>
+
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="treatments.html">Treatments</a>
+    <a href="doctor-profile.html">Doctor</a>
+    <a href="care.html">Care</a>
+    <a href="clinic.html">Clinic</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+
+  <a class="nav-cta" href="appointments.html">
+    Book consultation
+  </a>
+
+  <button
+    type="button"
+    class="menu-toggle"
+    aria-label="Open menu"
+    aria-expanded="false"
+  >
+    <i></i>
+    <i></i>
+    <i></i>
+  </button>
+
+</header>
+
+<div class="mobile-nav" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="treatments.html">Treatments</a>
+  <a href="doctor-profile.html">Doctor</a>
+  <a href="care.html">Care</a>
+  <a href="clinic.html">Clinic</a>
+  <a href="visit.html">Visit</a>
+
+  <a class="nav-cta" href="appointments.html">
+    Book consultation
+  </a>
+</div>
+
+<main><section class="treatments library-page section"><div class="section-kicker"><span>01</span><b>THE TREATMENT LIBRARY</b></div><div class="treatment-intro premium-intro"><div><h1>Our treatments.<br><em>Clear, considered care.</em></h1></div><p>Explore the services listed by Visage. Each page is intentionally simple: understand the concern, see the approach, and know where the next conversation begins.</p></div><div class="library-note"><span>VISAGE · THE AESTHETIC CLINIC</span><strong>Start with the concern. The treatment can follow.</strong></div>
+
+  <!-- Concern filter placed directly in the category heading area. -->
+  <div class="treatment-category-heading treatment-category-heading-filter" aria-live="polite">
+    <span class="treatment-category-number">01</span>
+    <div class="treatment-category-control form-field">
+      <label for="treatmentCategory">Select a concern</label>
+      <select id="treatmentCategory" name="treatmentCategory" aria-label="Select a treatment concern">
+        <option value="" selected>Select a concern</option>
+        <option value="skin">Skin</option>
+        <option value="hair-scalp">Hair &amp; scalp</option>
+        <option value="aesthetic-care">Aesthetic care</option>
+        <option value="hair-restoration">Hair restoration</option>
+      </select>
+    </div>
+    <p id="activeConcernDescription">Choose a concern to see only the treatments related to that area.</p>
+  </div>
+
+  <!-- The Treatments landing view starts with the four concern types only. -->
+  <section class="concern-overview" id="concernOverview" aria-label="Treatment concern categories">
+    <article class="concern-overview-card">
+      <span class="concern-overview-number">01</span>
+      <span class="concern-overview-copy"><strong>Skin</strong><small>Acne, pigmentation, marks and other skin concerns.</small></span>
+      <button class="concern-overview-action" type="button" data-select-concern="skin">Explore <b>→</b></button>
+    </article>
+    <article class="concern-overview-card">
+      <span class="concern-overview-number">02</span>
+      <span class="concern-overview-copy"><strong>Hair &amp; Scalp</strong><small>Hair fall, growth and scalp-focused concerns.</small></span>
+      <button class="concern-overview-action" type="button" data-select-concern="hair-scalp">Explore <b>→</b></button>
+    </article>
+    <article class="concern-overview-card">
+      <span class="concern-overview-number">03</span>
+      <span class="concern-overview-copy"><strong>Aesthetic Care</strong><small>Rejuvenation, body and laser-focused care.</small></span>
+      <button class="concern-overview-action" type="button" data-select-concern="aesthetic-care">Explore <b>→</b></button>
+    </article>
+    <article class="concern-overview-card">
+      <span class="concern-overview-number">04</span>
+      <span class="concern-overview-copy"><strong>Hair Restoration</strong><small>Consultation-led options for hair restoration.</small></span>
+      <button class="concern-overview-action" type="button" data-select-concern="hair-restoration">Explore <b>→</b></button>
+    </article>
+  </section>
+
+  <div class="selected-concern-bar" id="selectedConcernBar" hidden>
+    <button type="button" id="showAllConcerns" class="text-back-button">← All concerns</button>
+    <span id="selectedConcernTitle">Skin</span>
+  </div>
+
+  <div class="treatment-grid library-grid" id="treatmentGrid" hidden>    <article class="treatment-card library-card" data-category="skin">
+      <div class="treatment-image treatment-image-acne"><span>SKIN</span></div>
+      <div class="treatment-card-meta"><span>01</span><b>Acne &amp; Acne Scars</b><i></i></div>
+      <p>Acne, marks and scarring — understand the concern before choosing the next step.</p>
+      <a class="treatment-follow" href="treatment-acne.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="skin">
+      <div class="treatment-image treatment-image-pigmentation"><span>SKIN</span></div>
+      <div class="treatment-card-meta"><span>02</span><b>Pigmentation</b><i></i></div>
+      <p>A considered starting point for uneven tone and pigmentation concerns.</p>
+      <a class="treatment-follow" href="treatment-pigmentation.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="skin">
+      <div class="treatment-image treatment-image-acne-marks"><span>SKIN</span></div>
+      <div class="treatment-card-meta"><span>03</span><b>Acne Marks</b><i></i></div>
+      <p>A closer look at the marks left behind by acne and the care that may be discussed.</p>
+      <a class="treatment-follow" href="treatment-acne-marks.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="skin">
+      <div class="treatment-image treatment-image-spot"><span>SKIN</span></div>
+      <div class="treatment-card-meta"><span>04</span><b>Spot Treatments</b><i></i></div>
+      <p>Targeted skin concerns can be discussed after the skin has been properly assessed.</p>
+      <a class="treatment-follow" href="treatment-spot.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="skin">
+      <div class="treatment-image treatment-image-peels"><span>SKIN</span></div>
+      <div class="treatment-card-meta"><span>05</span><b>Skin Peels</b><i></i></div>
+      <p>Peel-based care listed by the clinic, considered according to the individual skin concern.</p>
+      <a class="treatment-follow" href="treatment-peels.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="skin">
+      <div class="treatment-image treatment-image-mole"><span>SKIN</span></div>
+      <div class="treatment-card-meta"><span>06</span><b>Mole Removal</b><i></i></div>
+      <p>A consultation-led page for patients asking about mole removal.</p>
+      <a class="treatment-follow" href="treatment-mole.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="skin">
+      <div class="treatment-image treatment-image-tags"><span>SKIN</span></div>
+      <div class="treatment-card-meta"><span>07</span><b>Skin Tags &amp; Warts</b><i></i></div>
+      <p>A focused place to understand the concern and discuss suitable next steps.</p>
+      <a class="treatment-follow" href="treatment-tags-warts.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="aesthetic-care">
+      <div class="treatment-image treatment-image-facials"><span>AESTHETICS</span></div>
+      <div class="treatment-card-meta"><span>08</span><b>Facials &amp; Skin Rejuvenation</b><i></i></div>
+      <p>Hydra Facials and advanced medi facials within a considered skin-care plan.</p>
+      <a class="treatment-follow" href="treatment-facials.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="aesthetic-care">
+      <div class="treatment-image treatment-image-medi-facials"><span>AESTHETICS</span></div>
+      <div class="treatment-card-meta"><span>09</span><b>Advanced Medi Facials</b><i></i></div>
+      <p>Advanced medi-facial care listed by Visage, with suitability discussed during consultation.</p>
+      <a class="treatment-follow" href="treatment-medi-facials.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="aesthetic-care">
+      <div class="treatment-image treatment-image-body"><span>AESTHETICS</span></div>
+      <div class="treatment-card-meta"><span>10</span><b>Body Brightening</b><i></i></div>
+      <p>An aesthetic-care option listed by the clinic for body-focused concerns.</p>
+      <a class="treatment-follow" href="treatment-body-brightening.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="aesthetic-care">
+      <div class="treatment-image treatment-image-laser"><span>LASER & AESTHETICS</span></div>
+      <div class="treatment-card-meta"><span>11</span><b>Laser Hair Removal</b><i></i></div>
+      <p>Laser-based hair reduction with the right approach discussed for the individual.</p>
+      <a class="treatment-follow" href="treatment-laser.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="aesthetic-care">
+      <div class="treatment-image treatment-image-tattoo"><span>LASER & AESTHETICS</span></div>
+      <div class="treatment-card-meta"><span>12</span><b>Tattoo Removal</b><i></i></div>
+      <p>A dedicated place to understand tattoo-removal options and what to discuss at consultation.</p>
+      <a class="treatment-follow" href="treatment-tattoo.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="hair-scalp">
+      <div class="treatment-image treatment-image-hair-loss"><span>HAIR & SCALP</span></div>
+      <div class="treatment-card-meta"><span>13</span><b>Hair Fall &amp; Hair Loss</b><i></i></div>
+      <p>Hair fall can present differently. Begin by understanding the concern before treatment.</p>
+      <a class="treatment-follow" href="treatment-hair-loss.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="hair-scalp">
+      <div class="treatment-image treatment-image-growth"><span>HAIR</span></div>
+      <div class="treatment-card-meta"><span>14</span><b>Hair Growth Therapies</b><i></i></div>
+      <p>A measured starting point for people exploring hair-growth concerns.</p>
+      <a class="treatment-follow" href="treatment-hair-growth.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="hair-scalp">
+      <div class="treatment-image treatment-image-dandruff"><span>HAIR & SCALP</span></div>
+      <div class="treatment-card-meta"><span>15</span><b>Dandruff Reduction</b><i></i></div>
+      <p>Dandruff care listed by the clinic, approached according to the scalp concern.</p>
+      <a class="treatment-follow" href="treatment-dandruff.html" aria-label="View treatment">View treatment</a></article>
+    <article class="treatment-card library-card" data-category="hair-restoration">
+      <div class="treatment-image treatment-image-transplant"><span>HAIR RESTORATION</span></div>
+      <div class="treatment-card-meta"><span>16</span><b>Hair Transplantation</b><i></i></div>
+      <p>Hair transplantation is one of the clinic-listed services for hair-loss concerns.</p>
+      <a class="treatment-follow" href="treatment-hair-transplant.html" aria-label="View treatment">View treatment</a></article></div></section></main>
+<footer class="footer"><div class="footer-brand"><div class="footer-lockup"><img decoding="async" src="assets/visage-logo-master.png" alt="Visage — The Aesthetic Clinic" loading="lazy"></div></div><div class="footer-links"><a href="index.html">Home</a><a href="treatments.html">Treatments</a><a href="doctor-profile.html">Doctor</a><a href="care.html">Care</a><a href="clinic.html">Clinic</a><a href="visit.html">Visit</a></div><div class="footer-contact"><a href="tel:+918142421239">081424 21239</a><a href="https://wa.me/918142421239" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://maps.app.goo.gl/1juLnpg883F3geJr5" target="_blank" rel="noopener noreferrer">Maps</a></div><p>© 2026 Visage — The Aesthetic Clinic</p></footer><div class="floating-actions">
+
+  <!-- Phone -->
+  <a href="tel:+918142421239" aria-label="Call Visage">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.53.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.2 2.42.57 3.53a1 1 0 0 1-.25 1.01l-2.2 2.25z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/918142421239"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp Visage"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.91 11.91 0 0 0 12.07 0C5.49 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.28-1.65a11.92 11.92 0 0 0 5.79 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.18-1.24-6.17-3.49-8.42zM12.08 21.82a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.73.98 1-3.63-.23-.37a9.88 9.88 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 7c0 5.46-4.44 9.89-9.9 9.89zm5.43-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-1.78-.89-2.95-1.59-4.13-3.61-.31-.53.31-.49.89-1.63.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+  </a>
+
+  <!-- Google Maps -->
+  <a
+    class="maps"
+    href="https://maps.app.goo.gl/1juLnpg883F3geJr5"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Open Visage location in Google Maps"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2C8.69 2 6 4.69 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.31-2.69-6-6-6zm0 8.5A2.5 2.5 0 1 1 12 5a2.5 2.5 0 0 1 0 5.5z"/>
+    </svg>
+  </a>
+
+</div>
+
+
+<script src="script.js" defer></script></body></html>

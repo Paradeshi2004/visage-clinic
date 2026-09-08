@@ -7953,3 +7953,112 @@ body:has(.visit-premium){
   outline: 2px solid #b69b5a;
   outline-offset: 3px;
 }
+
+/* =========================================================
+   FINAL VISAGE FOOTER BRAND LAYOUT
+   ========================================================= */
+
+/* Remove the OLD automatically-generated clinic text */
+.footer-brand::before,
+.footer-brand::after,
+.footer::before,
+.footer::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* Brand column */
+.footer-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+
+/* Logo */
+.footer-lockup {
+  display: block !important;
+}
+
+
+/* Clinic location */
+.footer-location {
+  display: block !important;
+
+  width: 100% !important;
+
+  margin-top: 28px !important;
+  margin-bottom: 0 !important;
+
+  color: #0b5148 !important;
+
+  font-family: "Manrope", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+
+  letter-spacing: 0.16em !important;
+  line-height: 1.5 !important;
+
+  text-align: left !important;
+}
+
+
+/* Social icons */
+.footer-socials {
+  display: flex !important;
+
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 14px !important;
+
+  margin-top: 22px !important;
+  margin-bottom: 0 !important;
+
+  width: 100% !important;
+}
+
+
+/* Social buttons */
+.footer-socials a {
+  width: 40px !important;
+  height: 40px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  flex: 0 0 40px !important;
+
+  color: #0b5148 !important;
+
+  border: 1px solid rgba(182, 155, 90, 0.75) !important;
+  border-radius: 50% !important;
+
+  text-decoration: none !important;
+
+  font-size: 17px !important;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.footer-socials a:hover {
+  background-color: #0b5148 !important;
+  color: #ffffff !important;
+  border-color: #0b5148 !important;
+
+  transform: translateY(-3px);
+}
+
+
+.footer-socials a:focus-visible {
+  outline: 2px solid #b69b5a;
+  outline-offset: 3px;
+}

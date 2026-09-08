@@ -7873,3 +7873,49 @@ body:has(.visit-premium){
 .form-status{background:rgba(11,81,72,.06);border-radius:10px;padding:0 10px;transition:padding .2s ease}.form-status:not(:empty){padding:10px;color:#0b5148!important}
 @media(max-width:760px){.doctor-selector{padding:16px 14px}.doctor-selector:hover,.doctor-selector.is-active{padding-left:16px;transform:none}.doctor-profile-details{grid-template-columns:1fr}.doctor-team-list{gap:10px}.doctor-focus-block{margin-bottom:22px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* =========================================================
+   FOOTER SOCIAL MEDIA
+   ========================================================= */
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #0b5148;
+  border: 1px solid rgba(182, 155, 90, 0.75);
+  border-radius: 50%;
+
+  text-decoration: none;
+  font-size: 17px;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #0b5148;
+  color: #ffffff;
+  border-color: #0b5148;
+  transform: translateY(-3px);
+}
+
+.footer-socials a:focus-visible {
+  outline: 2px solid #b69b5a;
+  outline-offset: 3px;
+}

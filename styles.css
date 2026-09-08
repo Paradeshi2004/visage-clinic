@@ -7883,7 +7883,8 @@ body:has(.visit-premium){
   justify-content: center;
   align-items: center;
   gap: 14px;
-  margin-top: 18px;
+  margin-top: 22px;
+  margin-bottom: 28px;
 }
 
 .footer-socials a {

@@ -7958,7 +7958,7 @@ body:has(.visit-premium){
    FINAL VISAGE FOOTER BRAND LAYOUT
    ========================================================= */
 
-/* Remove the OLD automatically-generated clinic text */
+/* Remove any old generated footer text */
 .footer-brand::before,
 .footer-brand::after,
 .footer::before,
@@ -7968,25 +7968,34 @@ body:has(.visit-premium){
 }
 
 
-/* Brand column */
+/* =========================================
+   BRAND COLUMN
+   ========================================= */
+
 .footer-brand {
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
+  align-items: center !important;
 }
 
 
-/* Logo */
+/* =========================================
+   VISAGE LOGO
+   ========================================= */
+
 .footer-lockup {
   display: block !important;
 }
 
 
-/* Clinic location */
+/* =========================================
+   CLINIC LOCATION
+   ========================================= */
+
 .footer-location {
   display: block !important;
 
-  width: 100% !important;
+  width: auto !important;
 
   margin-top: 28px !important;
   margin-bottom: 0 !important;
@@ -7994,17 +8003,21 @@ body:has(.visit-premium){
   color: #0b5148 !important;
 
   font-family: "Manrope", sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 500 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
 
-  letter-spacing: 0.16em !important;
+  letter-spacing: 0.20em !important;
   line-height: 1.5 !important;
 
-  text-align: left !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
 }
 
 
-/* Social icons */
+/* =========================================
+   SOCIAL MEDIA
+   ========================================= */
+
 .footer-socials {
   display: flex !important;
 
@@ -8014,14 +8027,17 @@ body:has(.visit-premium){
 
   gap: 14px !important;
 
-  margin-top: 22px !important;
-  margin-bottom: 0 !important;
+  width: auto !important;
 
-  width: 100% !important;
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
 }
 
 
-/* Social buttons */
+/* =========================================
+   SOCIAL BUTTONS
+   ========================================= */
+
 .footer-socials a {
   width: 40px !important;
   height: 40px !important;
@@ -8049,6 +8065,7 @@ body:has(.visit-premium){
 }
 
 
+/* Hover */
 .footer-socials a:hover {
   background-color: #0b5148 !important;
   color: #ffffff !important;
@@ -8058,6 +8075,7 @@ body:has(.visit-premium){
 }
 
 
+/* Keyboard focus */
 .footer-socials a:focus-visible {
   outline: 2px solid #b69b5a;
   outline-offset: 3px;

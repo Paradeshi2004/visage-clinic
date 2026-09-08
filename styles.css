@@ -7875,16 +7875,47 @@ body:has(.visit-premium){
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
 
 /* =========================================================
-   FOOTER SOCIAL MEDIA
+   FOOTER BRAND / SOCIAL ALIGNMENT
    ========================================================= */
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Visage logo */
+.footer-lockup {
+  display: block;
+}
+
+/* Clinic name under logo */
+.footer-location {
+  margin-top: 28px;
+  margin-bottom: 0;
+
+  width: 100%;
+
+  color: #0b5148;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+
+  text-align: left;
+}
+
+/* Social icons BELOW clinic name */
 .footer-socials {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+
   gap: 14px;
+
   margin-top: 22px;
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 .footer-socials a {
@@ -7896,10 +7927,12 @@ body:has(.visit-premium){
   justify-content: center;
 
   color: #0b5148;
+
   border: 1px solid rgba(182, 155, 90, 0.75);
   border-radius: 50%;
 
   text-decoration: none;
+
   font-size: 17px;
 
   transition:
